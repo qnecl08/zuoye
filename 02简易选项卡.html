@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="彭俊超">
+    <title>简易选项卡讲解</title>
+    <style>
+         .box{
+            width:400px;
+            border:1px solid #000;
+            margin:50px auto;
+         }
+         .tab{
+             background-color:black;
+             margin:0px;
+             padding:0px;
+             list-style: none;
+         }
+         li{
+             float:left;
+             width:60px;
+             text-align: center;
+             line-height:40px;
+             color:white;
+         }
+         .clearfix::after{
+             content:'';
+             clear:both;
+             display: block;
+             height:0px;
+             visibility: hidden;
+         }
+         .tab .active{
+             color:black;
+             background-color:#aaa;
+         }
+         p{
+             display: none;
+         }
+         p:first-child{
+             display: block;
+         }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul class="tab clearfix">
+            <li class="active">新闻</li>
+            <li>公告</li>
+            <li>赛程</li>
+        </ul>
+        <div class="content">
+            <p>1--新闻<br>新闻<br>新闻<br>新闻<br></p>
+            <p>2--公告<br>公告<br>公告<br>公告<br></p>
+            <p>3--赛程<br>赛程<br>赛程<br>赛程<br></p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    var lis = document.querySelectorAll('.tab li');
+    var allp = document.querySelectorAll('p');
+    for(var i = 0; i<lis.length;i++){
+        lis[i].index = i;
+        lis[i].onmouseover = function(){
+            for(var i = 0;i<lis.length;i++){
+            lis[i].className = '';
+            allp[i].style.display = 'none';
+            }
+            this.className = 'active';
+            allp[this.index].style.display = 'block';
+        }
+    }
+</script>
