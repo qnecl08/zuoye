@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="彭俊超">
+    <title>百度页面</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            margin:0px;
+            position:relative;
+        }
+        ul{
+            margin:0px;
+            padding:0px;
+            height:32px;
+            float:left;
+            padding:5px;
+        }
+        li{
+            list-style: none;
+            float:left;
+            font-size:15px;
+        }
+        .one{
+            width:430px;
+            margin-left:1150px;
+        }
+        .one li{
+            margin-left:10px;
+        }
+        a{
+            color:black;
+            font-weight:800;
+        }
+        .two{
+            margin-left:20px;
+        }
+        .two li{
+            margin-left:10px;
+        }
+        .two li a{
+            color:#666;
+        }
+        .clear{
+            clear:both;
+        }
+        hr{
+            color:#999;
+            opacity: 0.3;
+        }
+        .container{
+            width:1000px;
+            margin:0px auto;
+        }
+        img{
+            width:134px;
+            height:45px;
+            margin-top:20px;
+        }
+        form{
+            display: inline-block;
+        }
+        input{
+            width:535px;
+            height:40px;
+            position:relative;
+            top:-10px;
+            border:1px solid #999;
+        }
+        button{
+            width:110px;
+            height:42px;
+            position:relative;
+            top:-8px;
+            border:0px;
+            background-color:#38f;
+            font-size:15px;
+            color:white;
+        }
+        .move{
+            display: inline-block;
+            position:relative;
+            top:-10px;
+            margin-left:10px;
+            font-size:15px;
+        }
+        .danxuan{
+            margin-left:140px;
+            font-size:10px;
+        }
+        .danxuan input{
+            width:15px;
+            height:15px;
+        }
+        .xia{
+            position:relative;
+            top:3px;
+            margin-right:5px;
+        }
+        .nav{
+            width:100%;
+            background-color:#01204f;
+            /* margin-top:8px; */
+            height:40px;
+            position:relative;
+        }
+        .nav li{
+            height:40px;
+            margin-left:12px;
+            width:40px;
+             line-height:40px; 
+            margin-top:-5px;
+        }
+        .nav li:nth-child(1){
+            background-color:red;
+        }
+        .sport{
+            width:40px;
+            height:40px;
+            background-color:red;
+            position:absolute;
+            left:0px;
+            top:0px;
+        }
+        .nav li a{
+            color:white;
+            font-size:14px;
+            font-weight:400;
+            text-decoration: none;
+        }
+        #three{
+            width:62px;
+        }
+        #four{
+            width:76px;
+        }
+        span{
+            color:white;
+            font-size:18px;
+            display: inline-block;
+            transform: rotateZ(90deg) scale(1,1.2);
+        }
+        .middle{
+            height:1000px;
+            background-color:coral;
+        }
+        .di{
+            width:50px;
+            height:50px;
+            background-color:green;
+            position:fixed;
+            right:0px;
+            bottom:0px;
+            font-size:20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul class="one" >
+            <li><a href="http://www.baidu.com">网页</a></li>
+            <li><a href="http://www.baidu.com" style="text-decoration:none">新闻</a></li>
+            <li><a href="http://www.baidu.com">贴吧</a></li>
+            <li><a href="http://www.baidu.com">知道</a></li>
+            <li><a href="http://www.baidu.com">音乐</a></li>
+            <li><a href="http://www.baidu.com">图片</a></li>
+            <li><a href="http://www.baidu.com">视频</a></li>
+            <li><a href="http://www.baidu.com">地图</a></li>
+            <li><a href="http://www.baidu.com">文库</a></li>
+            &#x3000;&#x3000;&nbsp;&nbsp;&nbsp;|
+        </ul>
+        
+        <ul class="two">
+            <li><a href="http://www.baidu.com">百度首页</a></li>
+            <li><a href="http://www.baidu.com">登录</a></li>
+            <li><a href="http://www.baidu.com">注册</a></li>
+            <li><a href="http://www.baidu.com">百度新闻客户端</a></li>
+        </ul>
+        <div class="clear"></div>
+    </header>
+    <hr>
+    <section class="baidu">
+        <div class="container">
+            <img src="logo.png" alt="">
+            <form action="">
+                <input type="text" name="" value=""><button type="">百度一下</button>
+            </form>
+            <a href="" class="move">帮助</a>
+            <a href="" class="move">高级搜索</a>
+            <a href="" class="move">设置</a>
+            <div  class="danxuan">
+                <form action="">
+                    <input type="radio" class="xia" name="aa">新闻全文
+                    <input type="radio" class="xia" name="aa">新闻标题
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="nav">
+        <div class="sport"></div>
+        <div class="container">
+            <ul>
+                <li><a href="">首页</a></li>
+                <li id="three"><a href="">百家号</a></li>
+                <li><a href="">国内</a></li>
+                <li><a href="">国际</a></li>
+                <li><a href="">军事</a></li>
+                <li><a href="">社会</a></li>
+                <li><a href="">财经</a></li>
+                <li><a href="">娱乐</a></li>
+                <li><a href="">体育</a></li>
+                <li id="three"><a href="">互联网</a></li>
+                <li><a href="">科技</a></li>
+                <li><a href="">游戏</a></li>
+                <li><a href="">时尚</a></li>
+                <li><a href="">女人</a></li>
+                <li><a href="">汽车</a></li>
+                <li id="four"><a href="">个性推荐</a></li>
+                <li id="three"><a href="">更多</a>&nbsp;<span>&gt;</span></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </section>
+    <section class="middle container"></section>
+    <div class="di">返回<br>顶部</div>
+</body>
+
+</html>
+<script>
+      window.onscroll = function(){
+        var scrollTop =document.body.scrollTop ||document.documentElement.scrollTop;
+        var nav = document.querySelector('.nav');
+        if(scrollTop >= 153){
+           nav.style.position = 'fixed';
+           nav.style.top = '0';   
+        }
+        else{
+            nav.style.cssText = '';
+        }   
+    }
+
+    var lis = document.querySelector('li');
+    var di = document.querySelector('.di');
+    di.onclick = function(){
+            document.body.scrollTop = '0px';
+
+    }
+    
+
+</script>
