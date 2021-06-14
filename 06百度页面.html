@@ -247,12 +247,22 @@
         }   
     }
 
-    var lis = document.querySelector('li');
     var di = document.querySelector('.di');
     di.onclick = function(){
             document.body.scrollTop = '0px';
 
     }
-    
+    var sport = document.querySelector('.sport');
+    var lis = document.querySelectorAll('.nav li');
+    for(var i = 0;i<lis.length;i++){
+        lis[i].index = i;
+        lis[i].onmouseover = function(){
+            var long = lis[this.index].offsetLeft;
+            console.log(long);
+            sport.style.marginLeft = 'long';
+        }
+    }
+
+        
 
 </script>
